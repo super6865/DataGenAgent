@@ -378,3 +378,4 @@ Your support motivates us to keep improving and maintaining the project 💙
 For questions or suggestions, please contact us through:
 
 - GitHub Issues: [Submit an Issue](https://github.com/your-username/DataGenAgent/issues)
+- Email: 15979193012@163.com
