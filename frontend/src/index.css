@@ -1,0 +1,335 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables - Light Mode */
+:root {
+  --main-bg-color: #f8fafb;
+  --background: 255, 255, 255;
+  --foreground: 28, 28, 35;
+  
+  /* Foreground colors */
+  --coze-fg-revert: 255, 255, 255;
+  --coze-fg-white: 255, 255, 255;
+  --coze-fg-7: 255, 255, 255;
+  --coze-fg-6: 255, 255, 255;
+  --coze-fg-5: 255, 255, 255;
+  --coze-fg-4: 8, 13, 30;
+  --coze-fg-3: 15, 21, 40;
+  --coze-fg-2: 32, 41, 69;
+  --coze-fg-1: 55, 67, 106;
+  
+  /* Background colors */
+  --coze-bg-9: 6, 7, 9;
+  --coze-bg-8: 68, 83, 130;
+  --coze-bg-7: 75, 90, 140;
+  --coze-bg-6: 82, 100, 154;
+  --coze-bg-5: 87, 104, 161;
+  --coze-bg-4: 90, 108, 167;
+  --coze-bg-3: 255, 255, 255;
+  --coze-bg-2: 252, 252, 255;
+  --coze-bg-1: 247, 247, 252;
+  --coze-bg-0: 240, 240, 247;
+  
+  /* Brand colors */
+  --coze-brand-50: 102, 108, 255;
+  --coze-brand-30: 163, 166, 255;
+  --coze-brand-7: 65, 43, 255;
+  --coze-brand-6: 69, 56, 255;
+  --coze-brand-5: 81, 71, 255;
+  --coze-brand-3: 150, 159, 255;
+  --coze-brand-2: 161, 170, 255;
+  --coze-brand-1: 171, 181, 255;
+  --coze-brand-0: 181, 191, 255;
+  
+  /* Functional colors - Red */
+  --coze-red-7: 222, 22, 39;
+  --coze-red-6: 227, 36, 52;
+  --coze-red-5: 229, 50, 65;
+  --coze-red-3: 250, 138, 148;
+  --coze-red-2: 252, 149, 157;
+  --coze-red-1: 255, 163, 171;
+  --coze-red-0: 255, 173, 180;
+  
+  /* Functional colors - Yellow */
+  --coze-yellow-50: 242, 182, 0;
+  --coze-yellow-30: 245, 184, 0;
+  --coze-yellow-7: 229, 104, 0;
+  --coze-yellow-6: 242, 109, 0;
+  --coze-yellow-5: 255, 115, 0;
+  --coze-yellow-3: 242, 161, 94;
+  --coze-yellow-2: 242, 169, 109;
+  --coze-yellow-1: 240, 174, 120;
+  --coze-yellow-0: 239, 179, 130;
+  
+  /* Functional colors - Green */
+  --coze-green-7: 0, 161, 54;
+  --coze-green-6: 0, 168, 56;
+  --coze-green-5: 0, 178, 60;
+  --coze-green-3: 79, 201, 120;
+  --coze-green-2: 93, 207, 131;
+  --coze-green-1: 105, 209, 140;
+  --coze-green-0: 116, 212, 149;
+  
+  /* Stroke colors */
+  --coze-stroke-7: 55, 67, 106;
+  --coze-stroke-6: 68, 83, 130;
+  --coze-stroke-5: 82, 100, 154;
+  --coze-stroke-opaque: 226, 228, 239;
+  
+  /* Alpha values */
+  --coze-fg-revert-alpha: 1;
+  --coze-fg-white-alpha: 1;
+  --coze-fg-7-alpha: 1;
+  --coze-fg-6-alpha: 1;
+  --coze-fg-5-alpha: 1;
+  --coze-fg-4-alpha: 0.9;
+  --coze-fg-3-alpha: 0.82;
+  --coze-fg-2-alpha: 0.62;
+  --coze-fg-1-alpha: 0.38;
+  
+  --coze-bg-9-alpha: 0.16;
+  --coze-bg-8-alpha: 0.25;
+  --coze-bg-7-alpha: 0.19;
+  --coze-bg-6-alpha: 0.13;
+  --coze-bg-5-alpha: 0.08;
+  --coze-bg-4-alpha: 0.04;
+  --coze-bg-3-alpha: 1;
+  --coze-bg-2-alpha: 1;
+  --coze-bg-1-alpha: 1;
+  --coze-bg-0-alpha: 1;
+  
+  --coze-brand-50-alpha: 1;
+  --coze-brand-30-alpha: 0.45;
+  --coze-brand-7-alpha: 1;
+  --coze-brand-6-alpha: 1;
+  --coze-brand-5-alpha: 1;
+  --coze-brand-3-alpha: 0.45;
+  --coze-brand-2-alpha: 0.38;
+  --coze-brand-1-alpha: 0.3;
+  --coze-brand-0-alpha: 0.23;
+  
+  --coze-red-7-alpha: 1;
+  --coze-red-6-alpha: 1;
+  --coze-red-5-alpha: 1;
+  --coze-red-3-alpha: 0.45;
+  --coze-red-2-alpha: 0.38;
+  --coze-red-1-alpha: 0.3;
+  --coze-red-0-alpha: 0.23;
+  
+  --coze-yellow-50-alpha: 1;
+  --coze-yellow-30-alpha: 0.45;
+  --coze-yellow-7-alpha: 1;
+  --coze-yellow-6-alpha: 1;
+  --coze-yellow-5-alpha: 1;
+  --coze-yellow-3-alpha: 0.45;
+  --coze-yellow-2-alpha: 0.38;
+  --coze-yellow-1-alpha: 0.3;
+  --coze-yellow-0-alpha: 0.23;
+  
+  --coze-green-7-alpha: 1;
+  --coze-green-6-alpha: 1;
+  --coze-green-5-alpha: 1;
+  --coze-green-3-alpha: 0.45;
+  --coze-green-2-alpha: 0.38;
+  --coze-green-1-alpha: 0.3;
+  --coze-green-0-alpha: 0.23;
+  
+  --coze-stroke-7-alpha: 0.38;
+  --coze-stroke-6-alpha: 0.25;
+  --coze-stroke-5-alpha: 0.13;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Semantic color classes */
+.coz-fg-primary {
+  color: rgba(var(--coze-fg-3), var(--coze-fg-3-alpha));
+}
+
+.coz-fg-secondary {
+  color: rgba(var(--coze-fg-2), var(--coze-fg-2-alpha));
+}
+
+.coz-fg-dim {
+  color: rgba(var(--coze-fg-1), var(--coze-fg-1-alpha));
+}
+
+.coz-fg-plus {
+  color: rgba(var(--coze-fg-4), var(--coze-fg-4-alpha));
+}
+
+.coz-bg-primary {
+  background-color: rgba(var(--coze-bg-1), var(--coze-bg-1-alpha));
+}
+
+.coz-bg-secondary {
+  background-color: rgba(var(--coze-bg-0), var(--coze-bg-0-alpha));
+}
+
+.coz-bg-plus {
+  background-color: rgba(var(--coze-bg-2), var(--coze-bg-2-alpha));
+}
+
+.coz-mg-primary {
+  background-color: rgba(var(--coze-bg-5), var(--coze-bg-5-alpha));
+}
+
+.coz-stroke-primary {
+  border-color: rgba(var(--coze-stroke-5), var(--coze-stroke-5-alpha));
+}
+
+.coz-stroke-plus {
+  border-color: rgba(var(--coze-stroke-6), var(--coze-stroke-6-alpha));
+}
+
+/* Ant Design component overrides */
+.ant-btn-large {
+  height: 36px;
+  font-size: 14px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.ant-btn-default {
+  height: 32px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.ant-btn-small {
+  height: 28px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ant-input-lg {
+  min-height: 36px;
+  height: 36px;
+}
+
+.ant-input {
+  min-height: 32px;
+  height: 32px;
+}
+
+.ant-select-lg .ant-select-selector {
+  min-height: 36px;
+  height: 36px;
+}
+
+.ant-select .ant-select-selector {
+  min-height: 32px;
+  height: 32px;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  position: absolute;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.styled-scrollbar::-webkit-scrollbar-thumb {
+  visibility: hidden;
+}
+
+.styled-scrollbar:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+.styled-scrollbar {
+  scrollbar-gutter: stable;
+}
+
+/* Table styles */
+.ant-table {
+  font-size: 14px;
+}
+
+.ant-table-thead > tr > th {
+  background-color: rgba(var(--coze-bg-1), var(--coze-bg-1-alpha));
+  color: rgba(var(--coze-fg-3), var(--coze-fg-3-alpha));
+  font-weight: 500;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background-color: rgba(var(--coze-bg-0), var(--coze-bg-0-alpha));
+}
+
+/* Form styles */
+.ant-form-item-label > label {
+  color: rgba(var(--coze-fg-3), var(--coze-fg-3-alpha));
+  font-size: 14px;
+}
+
+.ant-form-item-explain-error {
+  color: rgba(var(--coze-red-5), 1);
+  font-size: 12px;
+}
+
+/* Card styles */
+.ant-card {
+  border-radius: 8px;
+}
+
+/* Empty state */
+.ant-empty-description {
+  color: rgba(var(--coze-fg-2), var(--coze-fg-2-alpha));
+}
+
+/* Menu styles - prevent text truncation */
+.ant-menu-item,
+.ant-menu-submenu-title {
+  white-space: nowrap !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+
+.ant-menu-item-title,
+.ant-menu-submenu-title span {
+  white-space: nowrap !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
